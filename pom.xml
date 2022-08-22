@@ -11,7 +11,7 @@
         <relativePath>../net.splitcells.network/projects/net.splitcells.pom.java.defaults/pom.xml</relativePath>
     </parent>
     <modules>
-        <module>../net.splitcells.network/projects/net.splitcells.system.root</module>
+        <module>../net.splitcells.network</module>
         <module>../net.splitcells.network.community.via.javadoc</module>
         <module>../net.splitcells.cin.log</module>
         <module>../net.splitcells.network.log</module>
