@@ -12,12 +12,12 @@
     </parent>
     <modules>
         <module>../net.splitcells.network</module>
-        <module>../net.splitcells.network.community.via.javadoc</module>
+        <module>../net.splitcells.network.distro</module>
+        <module>../net.splitcells.network.community</module>
         <module>../net.splitcells.cin.log</module>
         <module>../net.splitcells.network.log</module>
         <module>../net.splitcells.network.media</module>
         <module>../net.splitcells.os.state.interface.lib.gpl.2</module>
         <module>../net.splitcells.os.state.interface.lib.gpl.3</module>
-        <module>../net.splitcells.network.community.git-bug</module>
     </modules>
 </project>
