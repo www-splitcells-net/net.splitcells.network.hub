@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>network.repos</artifactId>
+    <artifactId>network.hub</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <parent>
@@ -19,5 +19,6 @@
         <module>../net.splitcells.network.media</module>
         <module>../net.splitcells.os.state.interface.lib.gpl.2</module>
         <module>../net.splitcells.os.state.interface.lib.gpl.3</module>
+        <module>../net.splitcells.martins.avots.deployment</module>
     </modules>
 </project>
