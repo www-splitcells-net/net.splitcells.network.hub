@@ -7,6 +7,7 @@ echo net.splitcells.network
 echo net.splitcells.network.bom
 echo net.splitcells.network.community
 echo net.splitcells.network.distro
+echo net.splitcells.network.worker
 echo net.splitcells.network.log
 echo net.splitcells.network.m2
 echo net.splitcells.network.media
