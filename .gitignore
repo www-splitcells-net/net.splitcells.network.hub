@@ -12,3 +12,5 @@ target/
 .pydevproject
 
 .vagrant/
+
+.flattened-pom.xml
