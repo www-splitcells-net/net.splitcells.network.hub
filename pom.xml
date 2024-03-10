@@ -11,6 +11,7 @@
     </parent>
     <modules>
         <module>../net.splitcells.network</module>
+        <module>projects/net.splitcells.network.hub</module>
         <module>../net.splitcells.network.worker</module>
         <module>../net.splitcells.network.distro</module>
         <module>../net.splitcells.network.community</module>

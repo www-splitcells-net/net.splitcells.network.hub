@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!--
+        SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
+        SPDX-FileCopyrightText: Contributors To The `net.splitcells.*` Projects
+    -->
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>network.hub</artifactId>
+    <parent>
+        <groupId>net.splitcells</groupId>
+        <artifactId>pom-java-defaults</artifactId>
+        <version>${revision}</version>
+        <relativePath>../../../net.splitcells.network/projects/net.splitcells.pom.java.defaults/pom.xml</relativePath>
+    </parent>
+    <dependencies>
+        <dependency>
+            <groupId>net.splitcells</groupId>
+            <artifactId>dem</artifactId>
+            <version>${revision}</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>resources-source-network</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>
+                                ${basedir}/target/classes/${project.groupId}.${project.artifactId}.resources
+                            </outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>../../</directory>
+                                    <filtering>true</filtering>
+                                    <includes>
+                                        <include>BUILD.md</include>
+                                        <include>CHANGELOG.md</include>
+                                        <include>CONTRIBUTING.md</include>
+                                        <include>DEVELOPMENT.md</include>
+                                        <include>LICENSE.md</include>
+                                        <include>NOTICE.md</include>
+                                        <include>README.md</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
