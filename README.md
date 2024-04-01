@@ -36,6 +36,8 @@ and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html)
 
 📚 Get structured documentation.
 
+⚖️ [View licensing information](https://splitcells.net/net/splitcells/network/LICENSE.html).
+
 ✍ [Contribute](./CONTRIBUTING.md) to projects.
 
 💰 Support [contributors](https://www.patreon.com/splitcells_net).
