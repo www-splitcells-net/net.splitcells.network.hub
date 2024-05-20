@@ -6,8 +6,9 @@ echo Codeberg
 echo git@codeberg.org:splitcells-net/'$1'.git
 echo GitHub
 echo git@github.com:www-splitcells-net/'$1'.git
-# TODO GitLab is deprecated, as there is no real need aside as a backup.
+# TODO REMOVE GitLab is deprecated, as there is no real need aside as a backup.
 # echo GitLab
 # echo git@gitlab.com:splitcells-net/'$1'.git
-echo SourceHut
-echo git@git.sr.ht:~splitcells-net/'$1'
+# TODO REMOVE The repos on the SourceHut repo hoster are now deleted.
+# echo SourceHut
+# echo git@git.sr.ht:~splitcells-net/'$1'
