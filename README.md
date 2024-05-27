@@ -49,7 +49,6 @@ and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html)
   [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=www-splitcells-net_net.splitcells.network&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=www-splitcells-net_net.splitcells.network)
   [![Code size](https://img.shields.io/github/languages/code-size/www-splitcells-net/net.splitcells.network)](https://github.com/www-splitcells-net/net.splitcells.network)
 * Cloud Status: [![Continuous Integration](https://github.com/www-splitcells-net/net.splitcells.network/workflows/Continous%20Integration/badge.svg)](https://github.com/www-splitcells-net/net.splitcells.network/actions)
-  [![Gitlab Continuous Integration](https://gitlab.com/splitcells-net/net.splitcells.network/badges/master/pipeline.svg)](https://gitlab.com/splitcells-net/net.splitcells.network/-/pipelines)
   [![builds.sr.ht status](https://builds.sr.ht/~splitcells-net/net.splitcells.svg)](https://builds.sr.ht/~splitcells-net)
   [![codecov](https://codecov.io/gh/www-splitcells-net/net.splitcells.network/branch/master/graph/badge.svg?token=Q1X4816ZAN)](https://codecov.io/gh/www-splitcells-net/net.splitcells.network)
   [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwww-splitcells-net%2Fnet.splitcells.network.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwww-splitcells-net%2Fnet.splitcells.network?ref=badge_shield)
@@ -74,7 +73,6 @@ and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html)
 * For complex and documented tickets [the network community repo](https://github.com/www-splitcells-net/net.splitcells.network.community) is used.
 * Repository Hosts:
     * [Github](https://github.com/www-splitcells-net/net.splitcells.network) is used mainly for general software development.
-    * [Gitlab](https://gitlab.com/splitcells-net/net.splitcells.network) is currently used only for continuous integration (CI).
     * [sourcehut](https://sr.ht/~splitcells-net/net.splitcells.network) is used mainly for writing articles and web rendering.
       It's CI pipeline is also used with the repo `net.splitcells.network.m2`, in order to ensure,
       that this project can be build offline and without the user's local Maven m2 repo.
