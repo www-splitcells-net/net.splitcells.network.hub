@@ -68,14 +68,9 @@ and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html)
   [![CodeQL-Analysis](https://github.com/www-splitcells-net/net.splitcells.network/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/www-splitcells-net/net.splitcells.network/actions/workflows/codeql-analysis.yml)
 ## Infrastructure
 * Rendered Documentation via [a personal website](https://splitcells.net/net/splitcells/network/README.html)
-* Tickets are managed [Github](https://github.com/www-splitcells-net/net.splitcells.network/issues) ([projects](https://github.com/www-splitcells-net/net.splitcells.network/projects?query=is%3Aopen)) for the community,
-  [Sourcehut's todo](https://todo.sr.ht/~splitcells-net/net.splitcells.network)  ([active tickets](https://todo.sr.ht/~splitcells-net/net.splitcells.network?search=label%3A%22active%22) and [all tickets](https://todo.sr.ht/~splitcells-net/net.splitcells.network)) for tickets related to the webserver.
 * For complex and documented tickets [the network community repo](https://github.com/www-splitcells-net/net.splitcells.network.community) is used.
 * Repository Hosts:
     * [Github](https://github.com/www-splitcells-net/net.splitcells.network) is used mainly for general software development.
-    * [sourcehut](https://sr.ht/~splitcells-net/net.splitcells.network) is used mainly for writing articles and web rendering.
-      It's CI pipeline is also used with the repo `net.splitcells.network.m2`, in order to ensure,
-      that this project can be build offline and without the user's local Maven m2 repo.
 ## Purpose of this repository
 This is a inventory and introduction of all Splitcells projects and its infrastructure.
 ## IDE
