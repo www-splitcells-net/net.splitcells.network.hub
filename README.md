@@ -68,9 +68,10 @@ and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html)
   [![CodeQL-Analysis](https://github.com/www-splitcells-net/net.splitcells.network/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/www-splitcells-net/net.splitcells.network/actions/workflows/codeql-analysis.yml)
 ## Infrastructure
 * Rendered Documentation via [a personal website](https://splitcells.net/net/splitcells/network/README.html)
-* For complex and documented tickets [the network community repo](https://github.com/www-splitcells-net/net.splitcells.network.community) is used.
+* For complex and documented tickets [the network community repo](https://codeberg.org/splitcells-net/net.splitcells.network.community) is used.
 * Repository Hosts:
-    * [Github](https://github.com/www-splitcells-net/net.splitcells.network) is used mainly for general software development.
+    * [Codeberg](https://codeberg.org/splitcells-net) is the main host, where development is done and planned.
+    * [Github](https://github.com/www-splitcells-net/net.splitcells.network) is the secondary host and used as a backup.
 ## Purpose of this repository
 This is a inventory and introduction of all Splitcells projects and its infrastructure.
 ## IDE
