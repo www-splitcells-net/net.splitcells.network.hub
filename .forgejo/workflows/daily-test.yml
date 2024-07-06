@@ -1,0 +1,4 @@
+name: Daily Test
+on:
+  schedule:
+    - cron: '@daily'
