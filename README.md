@@ -18,7 +18,7 @@
 
 🪧 Get to know the main [features](https://splitcells.net/net/splitcells/network/advertisement.html).
 
-🚑 Get some [community help and support](https://github.com/www-splitcells-net/net.splitcells.network/issues).
+🚑 Get some [community help and support](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues).
 
 🏗️ [Deploy](http://splitcells.net/net/splitcells/network/deployment.html) the software or [develop](http://splitcells.net/net/splitcells/network/DEVELOPMENT.html) programs with this project.
 
