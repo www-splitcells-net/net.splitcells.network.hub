@@ -2,7 +2,7 @@ name: Daily Test
 
 on:
   schedule:
-    - cron: '@daily'
+    - cron: '0 0 * * *' # Daily
 
 jobs:
   test:
