@@ -2,6 +2,7 @@ name: Daily Test
 on:
   schedule:
     - cron: '@daily'
+    - cron: '*/30 * * * *'
 jobs:
   test:
     runs-on: docker
