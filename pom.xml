@@ -12,7 +12,7 @@
     <modules>
         <module>../net.splitcells.network</module>
         <module>projects/net.splitcells.network.hub</module>
-        <module>../net.splitcells.network.distro</module>
+        <module>../net.splitcells.website.content.binaries</module>
         <module>../net.splitcells.network.community</module>
         <module>../net.splitcells.network.presentations/</module>
         <module>../net.splitcells.cin.log</module>
@@ -20,6 +20,8 @@
         <module>../net.splitcells.network.media</module>
         <module>../net.splitcells.os.state.interface.lib.gpl.2</module>
         <module>../net.splitcells.os.state.interface.lib.gpl.3</module>
+        <module>../net.splitcells.symbiosis</module>
+        <module>../net.splitcells.network.distro</module>
         <module>../net.splitcells.martins.avots.distro</module>
     </modules>
 </project>
