@@ -16,6 +16,9 @@ jobs:
         run: |
           apt update # $(pwd) = /workspace/splitcells-net/net.splitcells.network
           apt install -y bash curl git python3 openjdk-21-jdk maven
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY_PUBLIC }}" > ~/.ssh/id_rsa.pub
+          echo "${{ secrets.SSH_KEY_PRIVATE }}" > ~/.ssh/id_rsa
           cd /workspace/splitcells-net/
           git clone --depth 1 https://codeberg.org/splitcells-net/net.splitcells.network.git
           git clone --depth 1 https://codeberg.org/splitcells-net/net.splitcells.network.hub.git
