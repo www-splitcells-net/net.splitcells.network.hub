@@ -65,6 +65,7 @@ and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html)
   [![REUSE status](https://api.reuse.software/badge/github.com/www-splitcells-net/net.splitcells.network)](https://api.reuse.software/info/github.com/www-splitcells-net/net.splitcells.network)
   [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/6588/badge)](https://bestpractices.coreinfrastructure.org/projects/6588)
   [![CodeQL-Analysis](https://github.com/www-splitcells-net/net.splitcells.network/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/www-splitcells-net/net.splitcells.network/actions/workflows/codeql-analysis.yml)
+* [Daily Workflow on Codeberg](https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions)
 ## Infrastructure
 * Rendered Documentation via [a personal website](https://splitcells.net/net/splitcells/network/README.html)
 * For complex and documented tickets [the network community repo](https://codeberg.org/splitcells-net/net.splitcells.network.community) is used.
