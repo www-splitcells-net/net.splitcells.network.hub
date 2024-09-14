@@ -20,6 +20,7 @@ jobs:
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
           echo "${{ secrets.SSH_KEY_PUBLIC }}" > ~/.ssh/id_rsa.pub
           echo "${{ secrets.SSH_KEY_PRIVATE }}" > ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_KEY_PUBLIC }}"
           echo 000
           cat ~/.ssh/id_rsa.pub
           echo 111
