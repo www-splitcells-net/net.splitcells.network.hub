@@ -17,6 +17,7 @@ jobs:
           apt update # $(pwd) = /workspace/splitcells-net/net.splitcells.network
           apt install -y bash curl git python3 openjdk-21-jdk maven
           mkdir -p ~/.ssh
+          ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
           echo "${{ secrets.SSH_KEY_PUBLIC }}" > ~/.ssh/id_rsa.pub
           echo "${{ secrets.SSH_KEY_PRIVATE }}" > ~/.ssh/id_rsa
           cd /workspace/splitcells-net/
@@ -27,7 +28,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           cd /workspace/splitcells-net
-          net.splitcells.network.hub/bin/net.splitcells.osi.repos.peers | xargs -i sh -c "test -d {} || git clone git@github.com:www-splitcells-net/{}.git"
+          net.splitcells.network.hub/bin/net.splitcells.osi.repos.peers | xargs -i sh -c "test -d {} || git clone git@codeberg.org:splitcells-net/{}.git"
           cd /workspace/splitcells-net/net.splitcells.network
           bin/worker.repos.pull
           cd /workspace/splitcells-net/net.splitcells.network.bom
