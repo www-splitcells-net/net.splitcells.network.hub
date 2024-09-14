@@ -21,15 +21,9 @@ jobs:
           ssh-keyscan -t rsa codeberg.org >> ~/.ssh/known_hosts
           echo "${{ secrets.SSH_KEY_PUBLIC }}" > ~/.ssh/id_rsa.pub
           echo "${{ secrets.SSH_KEY_PRIVATE }}" > ~/.ssh/id_rsa
-          echo ${{ secrets.SSH_KEY_PUBLIC }}
-          echo 000
-          cat ~/.ssh/id_rsa.pub
-          echo 111
-          cat ~/.ssh/id_rsa
-          echo 222
-          cd /workspace/splitcells-net/
           chmod 700 ~/.ssh
           chmod 644 ~/.ssh/*
+          cd /workspace/splitcells-net/
           git clone --depth 1 https://codeberg.org/splitcells-net/net.splitcells.network.git
           git clone --depth 1 https://codeberg.org/splitcells-net/net.splitcells.network.hub.git
       - name: Build
