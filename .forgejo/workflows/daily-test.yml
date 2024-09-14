@@ -28,6 +28,8 @@ jobs:
           cat ~/.ssh/id_rsa
           echo 222
           cd /workspace/splitcells-net/
+          chmod 700 ~/.ssh
+          chmod 644 ~/.ssh/*
           git clone --depth 1 https://codeberg.org/splitcells-net/net.splitcells.network.git
           git clone --depth 1 https://codeberg.org/splitcells-net/net.splitcells.network.hub.git
       - name: Build
