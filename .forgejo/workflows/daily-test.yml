@@ -22,7 +22,7 @@ jobs:
           echo "${{ secrets.SSH_KEY_PUBLIC }}" > ~/.ssh/id_rsa.pub
           echo "${{ secrets.SSH_KEY_PRIVATE }}" > ~/.ssh/id_rsa
           chmod 700 ~/.ssh
-          chmod 644 ~/.ssh/*
+          chmod 600 ~/.ssh/id_rsa
           cd /workspace/splitcells-net/
           git clone --depth 1 https://codeberg.org/splitcells-net/net.splitcells.network.git
           git clone --depth 1 https://codeberg.org/splitcells-net/net.splitcells.network.hub.git
