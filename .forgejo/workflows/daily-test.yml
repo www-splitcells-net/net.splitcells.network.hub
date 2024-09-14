@@ -18,6 +18,7 @@ jobs:
           apt install -y bash curl git python3 openjdk-21-jdk maven
           mkdir -p ~/.ssh
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+          ssh-keyscan -t rsa codeberg.org >> ~/.ssh/known_hosts
           echo "${{ secrets.SSH_KEY_PUBLIC }}" > ~/.ssh/id_rsa.pub
           echo "${{ secrets.SSH_KEY_PRIVATE }}" > ~/.ssh/id_rsa
           echo ${{ secrets.SSH_KEY_PUBLIC }}
