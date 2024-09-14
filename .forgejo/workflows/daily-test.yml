@@ -20,6 +20,8 @@ jobs:
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
           echo "${{ secrets.SSH_KEY_PUBLIC }}" > ~/.ssh/id_rsa.pub
           echo "${{ secrets.SSH_KEY_PRIVATE }}" > ~/.ssh/id_rsa
+          cat ~/.ssh/id_rsa.pub
+          cat ~/.ssh/id_rsa
           cd /workspace/splitcells-net/
           git clone --depth 1 https://codeberg.org/splitcells-net/net.splitcells.network.git
           git clone --depth 1 https://codeberg.org/splitcells-net/net.splitcells.network.hub.git
