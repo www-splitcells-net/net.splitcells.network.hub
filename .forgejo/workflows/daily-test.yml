@@ -31,9 +31,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           cd /workspace/splitcells-net
-          echo 333
           net.splitcells.network.hub/bin/net.splitcells.osi.repos.peers | xargs -i sh -c "test -d {} || git clone git@codeberg.org:splitcells-net/{}.git"
-          echo 444
           cd /workspace/splitcells-net/net.splitcells.network
           bin/worker.repos.pull
           cd /workspace/splitcells-net/net.splitcells.network.bom
