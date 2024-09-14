@@ -3,7 +3,7 @@ name: Daily Test
 on:
   schedule:
     - cron: '0 0 * * *' # Daily
-  push: # This is used, in order to easily and quickly test changes to this workflow file.
+  push: # This is used, in order to easily and quickly test changes to this workflow file.#
 jobs:
   test:
     runs-on: docker
