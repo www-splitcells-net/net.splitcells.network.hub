@@ -73,9 +73,9 @@ and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html)
     * [Codeberg](https://codeberg.org/splitcells-net) is the main host, where development is done and planned.
     * [Github](https://github.com/www-splitcells-net/net.splitcells.network) is the secondary host and used as a backup.
 ## Purpose of this repository
-This is a inventory and introduction of all Splitcells projects and its infrastructure.
+This is an inventory and introduction of all Splitcells projects and its infrastructure.
 ## IDE
-This is also multi project module project links to all Splitcells Network repos,
+This is also a multi project module project, that links to all Splitcells Network repos,
 so these can be easily imported into IDEs.
 This is especially useful,
 when cross project automatic refactoring is done via an IDE.
