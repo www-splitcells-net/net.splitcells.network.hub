@@ -3,6 +3,7 @@
 # SPDX-FileCopyrightText: Contributors To The `net.splitcells.*` Projects
 set -e
 echo net.splitcells.cin.log
+echo net.splitcells.cin.text
 echo net.splitcells.network
 echo net.splitcells.network.bom
 echo net.splitcells.network.community
