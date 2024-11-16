@@ -10,7 +10,9 @@
 > by integrating local development projects with the developer's computer and programs.
 
 ## Where to start?
-🚀 [Model and optimize problems.](http://splitcells.net/net/splitcells/gel/index.html)
+🚀 [Use the software on the live server.](https://live.splitcells.net/)
+
+🚴 [Model and optimize problems.](http://splitcells.net/net/splitcells/gel/index.html)
 
 🥅 Understand the [objectives](https://splitcells.net/net/splitcells/network/objectives.html) of the project.
 
