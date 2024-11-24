@@ -20,8 +20,8 @@
         <module>../net.splitcells.cin.log</module>
         <module>../net.splitcells.network.log</module>
         <module>../net.splitcells.network.media</module>
-        <module>../net.splitcells.os.state.interface.lib.gpl.2</module>
-        <module>../net.splitcells.os.state.interface.lib.gpl.3</module>
+        <module>../net.splitcells.shell.lib.gpl.v2</module>
+        <module>../net.splitcells.shell.lib.gpl.v3</module>
         <module>../net.splitcells.symbiosis</module>
         <module>../net.splitcells.cin.text</module>
         <module>../net.splitcells.network.distro</module>
