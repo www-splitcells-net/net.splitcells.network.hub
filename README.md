@@ -10,6 +10,10 @@
 > by integrating local development projects with the developer's computer and programs.
 
 ## Where to start?
+🗞️️ Get an insights via our [blog](https://splitcells.net/net/splitcells/network/community/blog/index.html), [Mastodon/Fosstodon](https://fosstodon.org/@splitcells),
+the project's [history](https://splitcells.net/net/splitcells/network/history/index.html)
+and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html).
+
 🚀 [Use the software on the live server.](https://live.splitcells.net/)
 
 🚴 [Model and optimize problems.](http://splitcells.net/net/splitcells/gel/index.html)
@@ -27,10 +31,6 @@
 🔬 Analyze and organize your operations and prepare schedules.
 
 🤝 Collaborate large decision-making networks.
-
-🗞️️ Get an insights via our [blog](https://splitcells.net/net/splitcells/network/community/blog/index.html), [Mastodon/Fosstodon](https://fosstodon.org/@splitcells),
-the project's [history](https://splitcells.net/net/splitcells/network/history/index.html)
-and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html).
 
 🦉 Get a [bird's-eye project view](https://splitcells.net/net/splitcells/network/overview.html).
 
