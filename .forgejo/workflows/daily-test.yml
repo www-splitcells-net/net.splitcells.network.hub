@@ -41,6 +41,7 @@ jobs:
           mvn clean install
           cd /workspace/splitcells-net/net.splitcells.network.hub
           mvn -B clean install # Sonarcloud integration does not work here, as only the `net.splitcells.network` repo is known there.
+          mvn -B clean install -Dtest.groups=testing_integration -DexcludedGroups="experimental_test"
           bash -c 'bash <(curl -s https://codecov.io/bash)' # Upload tests to codecov.io. As the default shell is sh, a bash wrapping is used.
           # Setup shell project.
           cd /workspace/splitcells-net/net.splitcells.network/projects/net.splitcells.shell
