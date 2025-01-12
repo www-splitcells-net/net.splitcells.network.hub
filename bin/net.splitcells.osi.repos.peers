@@ -6,6 +6,7 @@ echo net.splitcells.cin.log
 echo net.splitcells.cin.text
 echo net.splitcells.network
 echo net.splitcells.network.bom
+echo net.splitcells.network.bom.base
 echo net.splitcells.network.community
 echo net.splitcells.network.distro
 echo net.splitcells.network.log

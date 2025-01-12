@@ -10,9 +10,10 @@
         <relativePath>../net.splitcells.network/projects/net.splitcells.pom.java.defaults/pom.xml</relativePath>
     </parent>
     <modules>
-        <module>../net.splitcells.network</module>
         <!-- The following is needed, in order to list the BOM project as a top level project in the Intellij IDE.-->
+        <module>../net.splitcells.network.bom.base</module>
         <module>../net.splitcells.network.bom</module>
+        <module>../net.splitcells.network</module>
         <module>projects/net.splitcells.network.hub</module>
         <module>../net.splitcells.website.content.binaries</module>
         <module>../net.splitcells.network.community</module>
