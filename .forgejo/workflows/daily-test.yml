@@ -37,6 +37,8 @@ jobs:
           net.splitcells.network.hub/bin/net.splitcells.osi.repos.peers | xargs -i sh -c "test -d {} || git clone git@codeberg.org:splitcells-net/{}.git"
           cd /workspace/splitcells-net/net.splitcells.network
           bin/worker.repos.pull
+          cd /workspace/splitcells-net/net.splitcells.network.bom.base
+          mvn clean install
           cd /workspace/splitcells-net/net.splitcells.network.bom
           mvn clean install
           cd /workspace/splitcells-net/net.splitcells.network.hub
