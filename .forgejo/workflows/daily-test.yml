@@ -25,7 +25,8 @@ jobs:
           echo "${{ secrets.SSH_KEY_PRIVATE }}" > ~/.ssh/id_rsa
           chmod 700 ~/.ssh
           chmod 600 ~/.ssh/id_rsa
-          cd /workspace/splitcells-net/
+          mkdir -p ~/.local/state/net.splitcells.network.worker/repos/public
+          cd ~/.local/state/net.splitcells.network.worker/repos/public
           git clone --depth 1 https://codeberg.org/splitcells-net/net.splitcells.network.git
           git clone --depth 1 https://codeberg.org/splitcells-net/net.splitcells.network.hub.git
       - name: Build
@@ -35,27 +36,17 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           # export test_codecov=1 # Enable codecov profiles in POMs. TODO Code coverage is not working.
-          cd /workspace/splitcells-net
-          net.splitcells.network.hub/bin/net.splitcells.osi.repos.peers | xargs -i sh -c "test -d {} || git clone git@codeberg.org:splitcells-net/{}.git"
-          cd /workspace/splitcells-net/net.splitcells.network
+          cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
+          bin/worker.bootstrap
           bin/worker.repos.pull
-          cd /workspace/splitcells-net/net.splitcells.network.bom.base
+          cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network.bom.base
           mvn clean install
-          cd /workspace/splitcells-net/net.splitcells.network.bom
+          cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network.bom
           mvn clean install
-          cd /workspace/splitcells-net/net.splitcells.network.hub
+          cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network.hub
           mvn -B clean install # Sonarcloud integration does not work here, as only the `net.splitcells.network` repo is known there.
           mvn -B clean install -Dtest.groups=testing_integration -DexcludedGroups="experimental_test"
           bash -c 'bash <(curl -s https://codecov.io/bash)' # Upload tests to codecov.io. As the default shell is sh, a bash wrapping is used.
-          # Setup shell project.
-          cd /workspace/splitcells-net/net.splitcells.network/projects/net.splitcells.shell
-          ./bin/install
-          # Setup command repositories.
-          cd /workspace/splitcells-net/net.splitcells.network
-          . ~/bin/net.splitcells.shell.commands.managed/command.managed.export.bin
-          command.repository.register $(realpath ../net.splitcells.shell.lib.gpl.v2)
-          command.repository.register $(realpath ../net.splitcells.shell.lib.gpl.v3)
-          user.bin.configure
           # Check repos.
-          cd /workspace/splitcells-net/net.splitcells.network
+          cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           bin/repos.license.check
