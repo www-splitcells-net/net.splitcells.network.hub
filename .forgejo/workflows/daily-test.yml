@@ -32,6 +32,11 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
+          # Discover HOME folder
+          echo ~/
+          echo $(realpath ~/)
+          echo $HOME
+          echo $(realpath ~/$HOME)
           # export test_codecov=1 # Enable codecov profiles in POMs. TODO Code coverage is not working.
           cd /workspace/splitcells-net
           net.splitcells.network.hub/bin/net.splitcells.osi.repos.peers | xargs -i sh -c "test -d {} || git clone git@codeberg.org:splitcells-net/{}.git"
