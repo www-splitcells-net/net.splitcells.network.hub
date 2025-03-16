@@ -37,7 +37,7 @@ jobs:
         run: |
           # export test_codecov=1 # Enable codecov profiles in POMs. TODO Code coverage is not working.
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
-          bin/worker.bootstrap
+          . bin/worker.bootstrap # This installs the shell project. `. [...]` provides the installed variables to the following commands.
           bin/worker.repos.pull
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network.bom.base
           mvn clean install
