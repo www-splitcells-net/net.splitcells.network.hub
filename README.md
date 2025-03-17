@@ -1,8 +1,9 @@
 # Splitcells[™](https://register.dpma.de/DPMAregister/marke/register/3020232218735/DE) Network Hub
 
-<div align="center" style="margin-bottom: 3em;">
+<div align="center">
   <img src="http://splitcells.net/net/splitcells/martins/avots/website/images/license.standard/net.splitcells.network.logo.for.readme.svg" style="width: 98%; display: block; margin: 1%;"/>
   <p>Together we are more than the sum of our cells.</p>
+  <br/>
 </div>
 
 We establish an open source [ecosystem](https://splitcells.net/net/splitcells/gel/index.html) centred around optimization and operations research.
