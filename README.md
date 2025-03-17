@@ -5,9 +5,16 @@
   <p>Together we are more than the sum of our cells.</p>
 </div>
 
-> We provide an open source [ecosystem](https://splitcells.net/net/splitcells/gel/index.html) centred around optimization and operations research.
-> The [shell project](https://splitcells.net/net/splitcells/shell/README.html) is used to ease the ecosystem's development,
-> by integrating local development projects with the developer's computer and programs.
+We establish an open source [ecosystem](https://splitcells.net/net/splitcells/gel/index.html) centred around optimization and operations research.
+We provide problem-solving functionality to users
+from solving the [N-Queen puzzle](https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html) to
+planning the [final high schools exams](https://live.splitcells.net/net/splitcells/gel/ui/editor/nocode/index.html).
+Domain experts interact the [no-code editor](https://live.splitcells.net/net/splitcells/gel/ui/editor/nocode/index.html)
+and developers use a concise [programming language](https://live.splitcells.net/net/splitcells/gel/ui/editor/code/index.html).
+The software is available as an [accessible cloud platform](https://live.splitcells.net/) and
+also runs locally as a [desktop program](https://splitcells.net/net/splitcells/network/distro/downloads/index.html).
+The [shell project](https://splitcells.net/net/splitcells/shell/README.html) provides additional tooling
+for the development and deployment of this software project.
 
 ## Where to start?
 🗞️️ Get an insights via our [blog](https://splitcells.net/net/splitcells/network/community/blog/index.html), [Mastodon/Fosstodon](https://fosstodon.org/@splitcells),
