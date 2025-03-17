@@ -46,6 +46,7 @@
                                         <include>LICENSE.md</include>
                                         <include>NOTICE.md</include>
                                         <include>README.md</include>
+                                        <include>README-for-users.md</include>
                                     </includes>
                                 </resource>
                             </resources>
