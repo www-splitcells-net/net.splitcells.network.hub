@@ -47,3 +47,6 @@ and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html)
 💰 Support [contributors](https://www.patreon.com/splitcells_net).
 
 📣 Spread the word!
+
+## Notes
+* This user README and the [developer README](./README.md) should have the sameish content.

@@ -90,3 +90,5 @@ This is especially useful,
 when cross project automatic refactoring is done via an IDE.
 ## Credits
 * [Public Key of the Founder and Main Developer Mārtiņš Avots (Martins Avots)](https://keys.openpgp.org/search?q=F844A8297DEB16D9B9486323A6A6108FC3486F37)
+## Notes
+* This developer README and the [user README](./README-for-users.md) should have the sameish content. 
