@@ -1,4 +1,4 @@
-# Splitcells[™](https://register.dpma.de/DPMAregister/marke/register/3020232218735/DE) Network Hub
+# Splitcells™ Network Meta
 
 We establish an open source [ecosystem](https://splitcells.net/net/splitcells/gel/index.html) centred around optimization and operations research.
 We provide problem-solving functionality to users
