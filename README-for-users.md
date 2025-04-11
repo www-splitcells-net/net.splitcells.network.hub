@@ -42,7 +42,7 @@ and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html)
 
 ⚖️ [View licensing information](https://splitcells.net/net/splitcells/network/LICENSE.html).
 
-✍ [Contribute](https://splitcells.net/net/splitcells/network/CONTRIBUTING.html) to projects.
+✍ [Access](https://codeberg.org/splitcells-net/net.splitcells.network.hub) the source code, [build](https://splitcells.net/net/splitcells/network/BUILD.html) the software and [contribute](https://splitcells.net/net/splitcells/network/CONTRIBUTING.html) to the projects.
 
 💰 Support [contributors](https://www.patreon.com/splitcells_net).
 
