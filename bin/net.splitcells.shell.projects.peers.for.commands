@@ -4,5 +4,6 @@
 set -e
 echo ../net.splitcells.network/projects/net.splitcells.shell
 echo ../net.splitcells.network/projects/net.splitcells.shell.lib
+echo ../net.splitcells.network/projects/net.splitcells.project
 echo ../net.splitcells.shell.lib.gpl.v2
 echo ../net.splitcells.shell.lib.gpl.v3
