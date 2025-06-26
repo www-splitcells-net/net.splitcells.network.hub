@@ -38,12 +38,6 @@ jobs:
           # export test_codecov=1 # Enable codecov profiles in POMs. TODO Code coverage is not working.
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           . bin/worker.bootstrap # This installs the shell project. `. [...]` provides the installed variables to the following commands.
-          cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network # Ensures, that `. bin/worker.bootstrap` does not changes the current directory.
-          bin/worker.repos.pull
-          cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network.bom.base
-          mvn clean install
-          cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network.bom
-          mvn clean install
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network.hub
           # Sonarcloud integration does not work here, as only the `net.splitcells.network` repo is known there.
           mvn -B test -Dtest.groups=testing_integration -DexcludedGroups="experimental_test"
