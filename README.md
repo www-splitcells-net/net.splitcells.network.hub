@@ -72,7 +72,6 @@ and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html)
   [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=www-splitcells-net_net.splitcells.network&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=www-splitcells-net_net.splitcells.network)
   [![REUSE status](https://api.reuse.software/badge/github.com/www-splitcells-net/net.splitcells.network)](https://api.reuse.software/info/github.com/www-splitcells-net/net.splitcells.network)
   [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/6588/badge)](https://bestpractices.coreinfrastructure.org/projects/6588)
-  [![CodeQL-Analysis](https://github.com/www-splitcells-net/net.splitcells.network/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/www-splitcells-net/net.splitcells.network/actions/workflows/codeql-analysis.yml)
 * [Daily Workflow on Codeberg](https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions)
 ## Infrastructure
 * Rendered Documentation via [a personal website](https://splitcells.net/net/splitcells/network/README.html)
