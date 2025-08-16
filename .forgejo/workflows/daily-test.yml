@@ -42,6 +42,9 @@ jobs:
           # Sonarcloud integration does not work here, as only the `net.splitcells.network` repo is known there.
           mvn -B clean install -Dtest.groups=testing_integration -DexcludedGroups="experimental_test"
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
-          mvn -B install -Dtest_codecov=1 # The install goal is required, in order to create the JaCoCo HTML reports.
+          # Create JaCoCo report:
+          # The install goal is required, in order to create the JaCoCo HTML reports.
+          # The JaCoCo report is created only for the main report, as otherwise the Distro repo causes errors. 
+          mvn -B install -Dtest_codecov=1
           bash -c 'bash <(curl -s https://codecov.io/bash)' # Upload tests to codecov.io. As the default shell is sh, a bash wrapping is used.
           bin/repos.license.check # TODO Enable this, when all repos comply with license check.
