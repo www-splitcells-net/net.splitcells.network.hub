@@ -53,5 +53,8 @@ jobs:
           bash -c 'bash <(curl -s https://codecov.io/bash)' # Upload tests to codecov.io. As the default shell is sh, a bash wrapping is used.
           bin/repos.license.check # TODO Enable this, when all repos comply with license check.
           if [ -z "$NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY" ]; then
-            scp -o PubkeyAuthentication=yes -r target/site/jacoco-aggregate/ splitcm@www322.your-server.de:/public_html/net/splitcells/martins/avots/website/jacoco-aggregate
+            mkdir -p ~/.ssh/
+            echo "$NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY" > ~/.ssh/id_rsa 
+            scp -i ~/.ssh/id_rsa -o PubkeyAuthentication=yes -r target/site/jacoco-aggregate/ splitcm@www322.your-server.de:/public_html/net/splitcells/martins/avots/website/jacoco-aggregate
+            rm ~/.ssh/id_rsa
           fi
