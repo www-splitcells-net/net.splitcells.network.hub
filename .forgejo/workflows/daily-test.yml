@@ -27,8 +27,8 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           mkdir -p ~/.local/state/net.splitcells.network.worker/repos/public
           cd ~/.local/state/net.splitcells.network.worker/repos/public
-          git clone --depth 1 https://codeberg.org/splitcells-net/net.splitcells.network.git
-          git clone --depth 1 https://codeberg.org/splitcells-net/net.splitcells.network.hub.git
+          git clone --depth 1 ssh://git@codeberg.org/splitcells-net/net.splitcells.network.git
+          git clone --depth 1 ssh://git@codeberg.org/splitcells-net/net.splitcells.network.hub.git
       - name: Build
         # TODO This code should be replaced with something like the script `net.splitcells.network/bin/worker.bootstrap`,
         # in order to minimize the amount of Codeberg specific code.
