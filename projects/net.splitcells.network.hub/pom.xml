@@ -39,12 +39,6 @@
                                     <directory>../../</directory>
                                     <filtering>true</filtering>
                                     <includes>
-                                        <include>BUILD.md</include>
-                                        <include>CHANGELOG.md</include>
-                                        <include>CONTRIBUTING.md</include>
-                                        <include>DEVELOPMENT.md</include>
-                                        <include>LICENSE.md</include>
-                                        <include>NOTICE.md</include>
                                         <include>README.md</include>
                                         <include>README-for-users.md</include>
                                     </includes>
