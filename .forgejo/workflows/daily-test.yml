@@ -53,7 +53,7 @@ jobs:
           export GITHUB_SHA=$(git rev-parse HEAD)
           bash -c 'bash <(curl -s https://codecov.io/bash)' # Upload tests to codecov.io. As the default shell is sh, a bash wrapping is used.
           bin/repos.license.check # TODO Enable this, when all repos comply with license check.
-          if [ -z NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY ]; then
+          if [ -v NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY ]; then
             mkdir -p ~/.ssh-website-upload/
             echo "$NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY" > ~/.ssh-website-upload/id_rsa
             chmod 700 ~/.ssh-website-upload/id_rsa # Otherwise, scp may not work.
