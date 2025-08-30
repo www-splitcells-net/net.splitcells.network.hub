@@ -37,6 +37,7 @@ jobs:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
           NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY: ${{ secrets.NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY }}
         run: |
+          echo 1 > "$HOME/.config/net.splitcells.network.worker/dominant.management" # Used for reusing SSH connections, which fixes problems with git pulls.
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           . bin/worker.bootstrap # This installs the shell project. `. [...]` provides the installed variables to the following commands.
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network.hub
