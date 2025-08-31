@@ -63,8 +63,8 @@ jobs:
             mkdir -p ~/.ssh-website-upload/
             echo "$NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY" > ~/.ssh-website-upload/id_rsa
             chmod 700 ~/.ssh-website-upload/id_rsa # Otherwise, scp may not work.
-            mkdir -p target/upload/net/splitcells/martins/avots/website/jacoco-aggregate # Using subdirectories, ensures, that scp does not get a problem with missing directories.
-            cp -r target/site/jacoco-aggregate/* target/upload/net/splitcells/martins/avots/website/jacoco-aggregate
-            scp -i ~/.ssh-website-upload/id_rsa -o PubkeyAuthentication=yes -o StrictHostKeyChecking=no -r target/upload/ splitcm@www322.your-server.de:/public_html
+            mkdir -p target/public_html/net/splitcells/martins/avots/website/jacoco-aggregate # Using subdirectories, ensures, that scp does not get a problem with missing directories.
+            cp -r target/site/jacoco-aggregate/* target/public_html/net/splitcells/martins/avots/website/jacoco-aggregate
+            scp -i ~/.ssh-website-upload/id_rsa -o PubkeyAuthentication=yes -o StrictHostKeyChecking=no -r target/public_html/ splitcm@www322.your-server.de:/public_html
             rm ~/.ssh-website-upload/id_rsa
           fi
