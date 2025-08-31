@@ -58,6 +58,8 @@ jobs:
           set +x # Prevent printing secrets.
           # -z is used because -v is not supported. 
           if [ -z "$NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY" ]; then
+            echo Upload to https://splitcells.net is disabled, because NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY is not set.
+          else
             mkdir -p ~/.ssh-website-upload/
             echo "$NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY" > ~/.ssh-website-upload/id_rsa
             chmod 700 ~/.ssh-website-upload/id_rsa # Otherwise, scp may not work.
