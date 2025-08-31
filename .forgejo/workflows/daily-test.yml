@@ -54,7 +54,7 @@ jobs:
           export GITHUB_REPOSITORY=www-splitcells-net/net.splitcells.network
           export GITHUB_SHA=$(git rev-parse HEAD)
           bash -c 'bash <(curl -s https://codecov.io/bash)' # Upload tests to codecov.io. As the default shell is sh, a bash wrapping is used.
-          bin/repos.verify # TODO Enable this, when all repos comply with license check.
+          bin/repos.verify
           set +x # Prevent printing secrets.
           # -z is used because -v is not supported. 
           if [ -z "$NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY" ]; then
