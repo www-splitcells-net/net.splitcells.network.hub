@@ -68,6 +68,7 @@ jobs:
             ls -al target/public_html/net/splitcells/martins/avots/website/jacoco-aggregate # TODO This is debug code.
             set -x
             set -e
+            realpath target/public_html/net/splitcells/martins/avots/website/jacoco-aggregate
             scp -v -i ~/.ssh-website-upload/id_rsa -o PubkeyAuthentication=yes -o StrictHostKeyChecking=no -r $(realpath ./target/) splitcm@www322.your-server.de:/
             rm ~/.ssh-website-upload/id_rsa
           fi
