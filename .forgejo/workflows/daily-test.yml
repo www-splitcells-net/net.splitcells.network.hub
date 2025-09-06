@@ -66,6 +66,6 @@ jobs:
             mkdir -p target/public_html/net/splitcells/martins/avots/website/jacoco-aggregate # Using subdirectories, ensures, that scp does not get a problem with missing directories.
             cp -r target/site/jacoco-aggregate/* target/public_html/net/splitcells/martins/avots/website/jacoco-aggregate
             ls -al target/public_html/net/splitcells/martins/avots/website/jacoco-aggregate # TODO This is debug code.
-            scp -i ~/.ssh-website-upload/id_rsa -o PubkeyAuthentication=yes -o StrictHostKeyChecking=no -r -O target/ splitcm@www322.your-server.de:/
+            scp -i ~/.ssh-website-upload/id_rsa -o PubkeyAuthentication=yes -o StrictHostKeyChecking=no -r target/ splitcm@www322.your-server.de:/
             rm ~/.ssh-website-upload/id_rsa
           fi
