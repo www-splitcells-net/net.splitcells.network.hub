@@ -30,6 +30,12 @@ jobs:
           git clone --depth 1 ssh://git@codeberg.org/splitcells-net/net.splitcells.network.git
           git clone --depth 1 ssh://git@codeberg.org/splitcells-net/net.splitcells.network.hub.git
       - name: Build
+        run: |
+          mkdir -p "$HOME/.config/net.splitcells.network.worker/"
+          echo 1 > "$HOME/.config/net.splitcells.network.worker/dominant.management" # Used for reusing SSH connections, which fixes problems with git pulls.
+          cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
+          . bin/worker.bootstrap # This installs the shell project. `. [...]` provides the installed variables to the following commands.
+      - name: Build Reports
         # TODO This code should be replaced with something like the script `net.splitcells.network/bin/worker.bootstrap`,
         # in order to minimize the amount of Codeberg specific code.
         env:
@@ -37,10 +43,6 @@ jobs:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
           NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY: ${{ secrets.NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY }}
         run: |
-          mkdir -p "$HOME/.config/net.splitcells.network.worker/"
-          echo 1 > "$HOME/.config/net.splitcells.network.worker/dominant.management" # Used for reusing SSH connections, which fixes problems with git pulls.
-          cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
-          . bin/worker.bootstrap # This installs the shell project. `. [...]` provides the installed variables to the following commands.
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network.hub
           # Sonarcloud integration does not work here, as only the `net.splitcells.network` repo is known there.
           mvn -B clean install -Dtest.groups=testing_integration -DexcludedGroups="experimental_test"
@@ -55,6 +57,13 @@ jobs:
           export GITHUB_SHA=$(git rev-parse HEAD)
           bash -c 'bash <(curl -s https://codecov.io/bash)' # Upload tests to codecov.io. As the default shell is sh, a bash wrapping is used.
           bin/repos.verify
+      - name: Upload Reports
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+          NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY: ${{ secrets.NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY }}
+        run: |
+          cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           set +x # Prevent printing secrets.
           # -z is used because -v is not supported. 
           if [ -z "$NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY" ]; then
