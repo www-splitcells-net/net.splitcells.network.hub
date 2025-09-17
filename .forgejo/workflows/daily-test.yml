@@ -49,8 +49,9 @@ jobs:
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           # Create JaCoCo report:
           # The install goal is required, in order to create the JaCoCo HTML reports.
-          # The JaCoCo report is created only for the main report, as otherwise the Distro repo causes errors. 
-          mvn -B install site -Dtest_codecov=1 -Dsource_code_check=1
+          # The JaCoCo report is created only for the main report, as otherwise the Distro repo causes errors.
+          mvn wrapper:wrapper -Dmaven=3.9.9 # Sets up the Maven version, in order to avoid build problems regarding the site goal.
+          ./mvnw -B install site -Dtest_codecov=1 -Dsource_code_check=1
           bin/repos.verify
       - name: Upload Reports
         env:
