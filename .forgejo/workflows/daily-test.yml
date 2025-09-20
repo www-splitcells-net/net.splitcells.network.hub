@@ -33,11 +33,6 @@ jobs:
           echo 1 > "$HOME/.config/net.splitcells.network.worker/dominant.management" # Used for reusing SSH connections, which fixes problems with git pulls.
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           . bin/worker.bootstrap # This installs the shell project. `. [...]` provides the installed variables to the following commands.
-      - name: Build
-        run: |
-          cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network.hub
-          # Sonarcloud integration does not work here, as only the `net.splitcells.network` repo is known there.
-          mvn -B clean install -Dtest.groups=testing_integration -DexcludedGroups="experimental_test"
       - name: Build Reports
         # TODO This code should be replaced with something like the script `net.splitcells.network/bin/worker.bootstrap`,
         # in order to minimize the amount of Codeberg specific code.
@@ -48,6 +43,7 @@ jobs:
         run: |
           . ~/bin/net.splitcells.shell.commands.managed/command.managed.export.bin
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
+          bin/repos.test.sh
           # The JaCoCo report is created only for the main report, as otherwise the Distro repo causes errors.
           mvn wrapper:wrapper -Dmaven=3.9.9 # Sets up the Maven version, in order to avoid build problems regarding the site goal.
           # Integration tests need to be enabled here as well, as verify does not only start the source code check, but also reruns the test and therefore the coverage.
