@@ -10,8 +10,8 @@ We establish an open source [ecosystem](https://splitcells.net/net/splitcells/ge
 We provide problem-solving functionality to users
 from solving the [N-Queen puzzle](https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html) to
 planning the [final high schools exams](https://live.splitcells.net/net/splitcells/gel/ui/editor/nocode/index.html).
-Domain experts interact the [code editor](https://live.splitcells.net/net/splitcells/gel/ui/editor/code/index.html)
-and developers use a concise [programming language](https://live.splitcells.net/net/splitcells/gel/ui/editor/code/index.html).
+Domain experts interact the [code editor](https://live.splitcells.net/net/splitcells/gel/ui/editor/geal/index.html)
+and developers use a concise programming language.
 The software is available as an [accessible cloud platform](https://live.splitcells.net/) and
 also runs locally as a [desktop program](https://splitcells.net/net/splitcells/network/distro/downloads/index.html).
 The [shell project](https://splitcells.net/net/splitcells/shell/README.html) provides additional tooling
