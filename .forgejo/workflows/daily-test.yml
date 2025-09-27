@@ -43,9 +43,8 @@ jobs:
         run: |
           . ~/bin/net.splitcells.shell.commands.managed/command.managed.export.bin
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
+          . bin/env.setup.sh
           bin/repos.test.sh
-          mvn wrapper:wrapper -Dmaven=3.9.9 # Sets up the Maven version, in order to avoid build problems regarding the site goal.
-          # Integration tests need to be enabled here as well, as verify does not only start the source code check, but also reruns the test and therefore the coverage.
           bin/repos.verify
       - name: Upload Reports
         env:
