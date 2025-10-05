@@ -34,8 +34,6 @@ jobs:
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           . bin/worker.bootstrap # This installs the shell project. `. [...]` provides the installed variables to the following commands.
       - name: Build Reports
-        # TODO This code should be replaced with something like the script `net.splitcells.network/bin/worker.bootstrap`,
-        # in order to minimize the amount of Codeberg specific code.
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
