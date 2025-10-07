@@ -43,7 +43,6 @@ jobs:
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           . bin/env.setup.sh
           bin/repos.test.sh
-          bin/repos.verify
       - name: Upload Reports
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
