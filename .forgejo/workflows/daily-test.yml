@@ -14,6 +14,7 @@ jobs:
     steps:
       - name: Setup Build
         run: |
+          set -e
           # $(pwd) = /workspace/splitcells-net/net.splitcells.network
           # $HOME and ~/ = /root
           apt update
@@ -38,6 +39,7 @@ jobs:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
           NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY: ${{ secrets.NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY }}
         run: |
+          set -e
           . ~/bin/net.splitcells.shell.commands.managed/command.managed.export.bin
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           . bin/env.setup.sh
@@ -47,5 +49,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY: ${{ secrets.NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY }}
         run: |
+          set -e
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           bin/repos.upload.reports.sh
