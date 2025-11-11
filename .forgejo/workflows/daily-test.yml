@@ -20,6 +20,9 @@ jobs:
           # $HOME and ~/ = /root
           apt update
           apt install -y bash curl git python3 pip pipx openjdk-21-jdk maven
+          # Setting up git is required for command like `bin/repos.dependencies.update`, that do commits.
+          git config --global user.email "codeberg-runner@splitcells.net"
+          git config --global user.name "Codeberg Runner"
           mkdir -p ~/.ssh
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
           ssh-keyscan -t rsa codeberg.org >> ~/.ssh/known_hosts
