@@ -15,6 +15,7 @@ jobs:
       - name: Setup Build
         run: |
           set -e
+          set -x
           # $(pwd) = /workspace/splitcells-net/net.splitcells.network
           # $HOME and ~/ = /root
           apt update
@@ -40,6 +41,7 @@ jobs:
           NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY: ${{ secrets.NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY }}
         run: |
           set -e
+          set -x
           . ~/bin/net.splitcells.shell.commands.managed/command.managed.export.bin
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           . bin/env.setup.sh
@@ -50,5 +52,6 @@ jobs:
           NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY: ${{ secrets.NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY }}
         run: |
           set -e
+          set -x
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           bin/repos.upload.reports.sh
