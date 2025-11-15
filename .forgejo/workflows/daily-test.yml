@@ -50,6 +50,7 @@ jobs:
           . bin/env.setup.sh
           bin/repos.dependencies.update
           bin/repos.test.sh
+          bin/repos.dependencies.push.sh
       - name: Upload Reports
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
