@@ -48,6 +48,7 @@ jobs:
           . ~/bin/net.splitcells.shell.commands.managed/command.managed.export.bin
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           . bin/env.setup.sh
+          bin/repos.dependencies.update
           bin/repos.test.sh
       - name: Upload Reports
         env:
