@@ -80,6 +80,8 @@ and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html)
     * [Github](https://github.com/www-splitcells-net/net.splitcells.network) is the secondary host and used as a backup.
 ## Purpose of this repository
 This is an inventory and introduction of all Splitcells projects and its infrastructure.
+Thereby, this makes the core repo `net.splitcells.network` independent of other repos.
+This in turn, creates a focus on treating other repos more like plugins, that extend the core repo.
 ## IDE
 This is also a multi project module project, that links to all Splitcells Network repos,
 so these can be easily imported into IDEs.
