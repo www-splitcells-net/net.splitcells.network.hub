@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
+# SPDX-FileCopyrightText: Contributors To The `net.splitcells.*` Projects
+set -e
+echo net.splitcells.cin.log
+echo net.splitcells.cin.text
+echo net.splitcells.network
+echo net.splitcells.network.bom
+echo net.splitcells.network.bom.base
+echo net.splitcells.network.community
+echo net.splitcells.network.distro
+echo net.splitcells.network.log
+echo net.splitcells.network.m2
+echo net.splitcells.network.media
+echo net.splitcells.network.presentations
+echo net.splitcells.symbiosis
+echo net.splitcells.shell.lib.gpl.v2
+echo net.splitcells.shell.lib.gpl.v3
+echo net.splitcells.website.content.binaries
+echo net.splitcells.martins.avots.distro
