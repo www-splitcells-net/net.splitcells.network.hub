@@ -59,7 +59,6 @@ and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html)
   [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=www-splitcells-net_net.splitcells.network&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=www-splitcells-net_net.splitcells.network)
   [![Code size](https://img.shields.io/github/languages/code-size/www-splitcells-net/net.splitcells.network)](https://github.com/www-splitcells-net/net.splitcells.network)
 * Cloud Status:
-  [![Continuous Integration](https://github.com/www-splitcells-net/net.splitcells.network/actions/workflows/net.splitcells.system.build.yml/badge.svg)](https://github.com/www-splitcells-net/net.splitcells.network/actions/workflows/net.splitcells.system.build.yml)
   [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=www-splitcells-net_net.splitcells.network&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=www-splitcells-net_net.splitcells.network)
   [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=www-splitcells-net_net.splitcells.network&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=www-splitcells-net_net.splitcells.network)
   [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=www-splitcells-net_net.splitcells.network&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=www-splitcells-net_net.splitcells.network)
