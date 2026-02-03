@@ -3,7 +3,7 @@
 We establish an open source [ecosystem](https://splitcells.net/net/splitcells/gel/index.html) centred around optimization and operations research.
 We provide problem-solving functionality to users
 from solving the [N-Queen puzzle](https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html) to
-planning the [final high schools exams](https://live.splitcells.net/net/splitcells/gel/ui/editor/nocode/index.html).
+planning the [final high schools exams](https://live.splitcells.net/net/splitcells/gel/ui/editor/geal/index.html).
 Domain experts interact the [code editor](https://live.splitcells.net/net/splitcells/gel/ui/editor/geal/index.html)
 and developers use a concise programming language.
 The software is available as an [accessible cloud platform](https://live.splitcells.net/),
