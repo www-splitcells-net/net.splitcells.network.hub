@@ -59,4 +59,5 @@ jobs:
           set -e
           set -x
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
+          . bin/env.setup.sh
           bin/repos.upload.reports.sh
