@@ -1,6 +1,6 @@
 # Splitcells™ Network Meta
 
-We establish an open source [ecosystem](https://splitcells.net/net/splitcells/gel/index.html) centred around optimization and operations research.
+We establish an open source [ecosystem](https://splitcells.net/net/splitcells/gel/index.html) centered around optimization and operations research.
 We provide problem-solving functionality to users
 from solving the [N-Queen puzzle](https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html) to
 planning the [final high schools exams](https://live.splitcells.net/net/splitcells/gel/ui/editor/geal/index.html).
