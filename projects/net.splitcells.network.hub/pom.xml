@@ -25,7 +25,7 @@
                 <artifactId>maven-resources-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>resources-source-network</id>
+                        <id>top-resources</id>
                         <phase>validate</phase>
                         <goals>
                             <goal>copy-resources</goal>
@@ -33,6 +33,28 @@
                         <configuration>
                             <outputDirectory>
                                 ${basedir}/target/classes/${project.groupId}.${project.artifactId}.resources
+                            </outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>../../</directory>
+                                    <filtering>true</filtering>
+                                    <includes>
+                                        <include>README.md</include>
+                                        <include>README-for-users.md</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>resources</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>
+                                ${basedir}/target/classes/${project.groupId}.${project.artifactId}.resources/src/main/md/net/splitcells/network/hub
                             </outputDirectory>
                             <resources>
                                 <resource>
