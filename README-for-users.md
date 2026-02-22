@@ -8,7 +8,9 @@ Domain experts interact the [code editor](https://live.splitcells.net/net/splitc
 and developers use a concise programming language.
 The software is available as an [accessible cloud platform](https://live.splitcells.net/),
 but can also be [build](https://splitcells.net/net/splitcells/network/BUILD.html) and run locally.
-The [shell project](https://splitcells.net/net/splitcells/shell/README.html) provides additional tooling
+The [shell project](https://splitcells.net/net/splitcells/shell/README.html)
+and the [repo process](https://splitcells.net/net/splitcells/project/repo/repos.process.html)
+provides additional tooling
 for the development and deployment of this software project.
 
 ## Where to start?
