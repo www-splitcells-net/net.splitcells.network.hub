@@ -61,3 +61,10 @@ jobs:
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           . bin/env.setup.sh
           bin/repos.upload.reports.sh
+      - name: Optional Tests
+        run: |
+          set -e
+          set -x
+          cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
+          . bin/env.setup.sh
+          bin/repos.test.optional.sh
