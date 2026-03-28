@@ -51,7 +51,7 @@ jobs:
           bin/repos.dependencies.update
           bin/repos.test.sh
           bin/repos.dependencies.push.sh
-      - name: Upload Reports
+      - name: Additional Tests and Upload Reports
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY: ${{ secrets.NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY }}
@@ -60,7 +60,7 @@ jobs:
           set -x
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           . bin/env.setup.sh
-          bin/repos.upload.reports.sh
+          bin/repos.additional.tests.and.upload.reports.sh
       - name: Optional Tests
         run: |
           set -e
