@@ -12,7 +12,7 @@ jobs:
         # This is required, because playwright does not work in `alpine:latest`.
         # Maybe this could be fixed via `playwright.driver.tmpdir`. See https://github.com/microsoft/playwright-java/issues/728
     steps:
-      - name: Setup Build
+      - name: Setup environment.
         run: |
           set -e
           set -x
@@ -26,10 +26,15 @@ jobs:
           mkdir -p ~/.ssh
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
           ssh-keyscan -t rsa codeberg.org >> ~/.ssh/known_hosts
-          echo "${{ secrets.SSH_KEY_PUBLIC }}" > ~/.ssh/id_rsa.pub
-          echo "${{ secrets.SSH_KEY_PRIVATE }}" > ~/.ssh/id_rsa
+      - name: Setup environment secrets.
+        run: |
+          set -e
+          set +x && echo "${{ secrets.SSH_KEY_PUBLIC }}" > ~/.ssh/id_rsa.pub
+          set +x && echo "${{ secrets.SSH_KEY_PRIVATE }}" > ~/.ssh/id_rsa
+          set -x
           chmod 700 ~/.ssh
           chmod 600 ~/.ssh/id_rsa
+      - name: Setup repos.
           mkdir -p ~/.local/state/net.splitcells.network.worker/repos/public
           cd ~/.local/state/net.splitcells.network.worker/repos/public
           git clone --depth 1 ssh://git@codeberg.org/splitcells-net/net.splitcells.network.git
@@ -37,7 +42,7 @@ jobs:
           echo 1 > "$HOME/.config/net.splitcells.network.worker/dominant.management" # Used for reusing SSH connections, which fixes problems with git pulls.
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           bin/worker.bootstrap # This installs the shell project.
-      - name: Build Reports
+      - name: Build reports.
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
@@ -51,7 +56,7 @@ jobs:
           bin/repos.dependencies.update
           bin/repos.test.sh
           bin/repos.dependencies.push.sh
-      - name: Additional Tests and Upload Reports
+      - name: Run additional tests and upload reports.
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY: ${{ secrets.NET_SPLITCELLS_MARTINS_AVOTS_WEBSITE_SFTP_PRIVATE_KEY }}
@@ -61,7 +66,7 @@ jobs:
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           . bin/env.setup.sh
           bin/repos.additional.tests.and.upload.reports.sh
-      - name: Optional Tests
+      - name: Execute optional tests.
         run: |
           set -e
           set -x
