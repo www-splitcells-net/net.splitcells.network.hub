@@ -29,8 +29,8 @@ jobs:
       - name: Setup environment secrets.
         run: |
           set -e
-          set +x && echo "${{ secrets.SSH_KEY_PUBLIC }}" > ~/.ssh/id_rsa.pub
-          set +x && echo "${{ secrets.SSH_KEY_PRIVATE }}" > ~/.ssh/id_rsa
+          set +x && echo "${{ secrets.SSH_WORKFLOW_PUBLIC_KEY }}" > ~/.ssh/id_rsa.pub
+          set +x && echo "${{ secrets.SSH_WORKFLOW_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           set -x
           chmod 700 ~/.ssh
           chmod 600 ~/.ssh/id_rsa
