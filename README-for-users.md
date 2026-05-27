@@ -14,13 +14,14 @@ provides additional tooling
 for the development and deployment of this software project.
 
 ## Where to start?
-🗞️️ Get an insights via our [blog](https://splitcells.net/net/splitcells/network/community/blog/index.html), [Mastodon/Fosstodon](https://fosstodon.org/@splitcells),
-the project's [history](https://splitcells.net/net/splitcells/network/history/index.html)
-and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html).
 
 🚀 [Use the software on the live server.](https://live.splitcells.net/)
 
 🚴 [Model and optimize problems.](http://splitcells.net/net/splitcells/gel/index.html)
+
+🗞️️ Get an insights via our [blog](https://splitcells.net/net/splitcells/network/community/blog/index.html), [Mastodon/Fosstodon](https://fosstodon.org/@splitcells),
+the project's [history](https://splitcells.net/net/splitcells/network/history/index.html)
+and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html).
 
 🥅 Understand the [objectives](https://splitcells.net/net/splitcells/network/objectives.html) of the project.
 
