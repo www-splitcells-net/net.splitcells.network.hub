@@ -24,6 +24,7 @@ jobs:
           git config --global user.email "codeberg-runner@splitcells.net"
           git config --global user.name "Codeberg Runner"
           mkdir -p ~/.ssh
+          # These commands avoid interactive confirmation requests, as otherwise the IPs for the hosts are unknown on this new container.
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
           ssh-keyscan -t rsa codeberg.org >> ~/.ssh/known_hosts
       - name: Setup environment secrets.
