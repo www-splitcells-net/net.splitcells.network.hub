@@ -19,7 +19,8 @@ jobs:
           # $(pwd) = /workspace/splitcells-net/net.splitcells.network
           # $HOME and ~/ = /root
           apt update
-          apt install -y bash curl git python3 pip pipx openjdk-21-jdk maven
+          # File is required in order to be able, to install reuse via pipx.
+          apt install -y bash curl git python3 pip pipx openjdk-21-jdk maven file
           # Setting up git is required for command like `bin/repos.dependencies.update`, that do commits.
           git config --global user.email "codeberg-runner@splitcells.net"
           git config --global user.name "Codeberg Runner"
