@@ -75,3 +75,12 @@ jobs:
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           . bin/env.setup.sh
           bin/repos.test.optional.sh
+      - name: Run developer bootstrap.
+        run: |
+          set -e
+          set -x
+          repos=~/Documents/projects/net.splitcells.martins.avots.support.system/public
+          mkdir -p $repos
+          cd $repos
+          git clone --depth 1 ssh://git@codeberg.org/splitcells-net/net.splitcells.network.git
+          bin/developer.bootstrap.sh
