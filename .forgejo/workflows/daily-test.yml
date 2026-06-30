@@ -79,8 +79,8 @@ jobs:
         run: |
           set -e
           set -x
-          repos=~/Documents/projects/net.splitcells.martins.avots.support.system/public
+          repos=~/Documents/projects/net.splitcells.martins.avots.support.system/public/net.splitcells.network
           mkdir -p $repos
           cd $repos
-          git clone --depth 1 ssh://git@codeberg.org/splitcells-net/net.splitcells.network.git
+          git clone --depth 1 ssh://git@codeberg.org/splitcells-net/net.splitcells.network.git .
           bin/developer.bootstrap.sh
