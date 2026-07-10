@@ -79,6 +79,7 @@ jobs:
         run: |
           set -e
           set -x
+          rm -rf ~/.config/net.splitcells.shell # Delete files from previous steps.
           repos=~/Documents/projects/net.splitcells.martins.avots.support.system/public/net.splitcells.network
           mkdir -p $repos
           cd $repos
