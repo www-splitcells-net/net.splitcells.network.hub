@@ -51,6 +51,6 @@ and our [changelog](https://splitcells.net/net/splitcells/CHANGELOG.global.html)
 
 📣 Spread the word!
 
-## Notes
+## Note
 <!-- The link is a hack, as it works with the LinkTranslator in the website server. -->
-* This user README and the [developer README](/net/splitcells/network/hub/README.md) should have the sameish content.
+This user README and the [developer README](/net/splitcells/network/hub/README.md) should have the sameish content.
