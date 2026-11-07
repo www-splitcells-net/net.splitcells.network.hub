@@ -68,6 +68,8 @@ jobs:
           cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network
           . bin/env.setup.sh
           bin/repos.test.additional.and.upload.reports.sh
+          cd ~/.local/state/net.splitcells.network.worker/repos/public/net.splitcells.network.log
+          git push
       - name: Execute optional tests.
         run: |
           set -e
